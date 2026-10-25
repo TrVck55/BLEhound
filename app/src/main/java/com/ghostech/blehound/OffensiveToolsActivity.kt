@@ -57,26 +57,26 @@ class OffensiveToolsActivity : Activity() {
     )
 
     private val spamNames = listOf(
-        "\uD83D\uDC1D nyanbee", "\uD83D\uDC1D BUZZ BUZZ", "\uD83C\uDF6F Honey Trap",
-        "\uD83D\uDC1D Queen Bee", "\uD83D\uDC1D The Hive", "\uD83D\uDC1D Stinger",
-        "\uD83D\uDC1D Hivemind", "\uD83D\uDC1D CK42X.COM",
-        "Free WiFi", "AirDrop - iPhone", "Galaxy Buds Pro",
-        "FBI Van #3", "Crypto Wallet", "Toilet"
+        "\uD83D\uDC1D Trojan:AndroidOS/Kmin.A", "\uD83D\uDC1D Trojan:AndroidOS/Koler", "\uD83C\uDF6F Trojan:AndroidOS/Multiverze",
+        "\uD83D\uDC1D Android/Trojan.Guerrilla", "\uD83D\uDC1D Android/Trojan.HiddenApp", "\uD83D\uDC1D Android/Trojan.SMS.Tiny",
+        "\uD83D\uDC1D HEUR:Trojan.Win32.Generic", "\uD83D\uDC1D Worm:Win32/Conficker.B",
+        "Backdoor.Win32.Mydoom", "Trojan-Ransom.Win32.Locky", "Spyware.PasswordStealer.Azorult",
+        "Trojan-Spy.Win32.Sertor", "Trojan:Win32/Leonem", "Перевод СБП: +50,000 руб!!!!"
     )
 
     // Bee-themed spam names (BEE SPAM exclusive)
     // ASCII only, max 20 chars. Emoji break setName on many Android versions.
     private val beeSwarmNames = listOf(
-        "[BEE] Worker #1", "[BEE] Worker #2", "[BEE] Worker #3",
-        "[BEE] Drone", "[BEE] Scout", "[BEE] Guard",
-        "[BEE] Queen Guard", "[BEE] Honey Maker", "[BEE] Pollen Run",
-        "[BEE] Wax Builder", "[BEE] Inspector", "[BEE] Royal Jelly",
-        "[BEE] Stinger", "[BEE] Nectar Ops", "[BEE] Swarm Lead",
-        "[BEE] Larva-01", "[BEE] Comb Cell 7", "[BEE] Waggle",
-        "[BEE] Propolis", "[BEE] Forager", "[BEE] Nurse",
-        "[BEE] Undertaker", "nyanBEE HQ", "BZZT BZZT",
-        "Honeycomb Net", "Sweet Sting", "Apiary Node",
-        "CK42X SWARM", "BEE HOUND", "THE HIVE SEES"
+        "[BOT-1] TurtleFable", "[BOT-2] ScrollBucket", "[BOT-3] ScarfTimber",
+        "[BOT-4] SalmonCompass", "[BOT-5] RumbleCactus", "[BOT-6] RabbitGranite",
+        "[BOT-7] PebblePathway", "[BOT-8] PassagePencil", "[BOT-9] PantherJourney",
+        "[BOT-10] WaxBuilder", "[BOT-11] PantherDenim", "[BOT-12] MemoryLeopard",
+        "[BOT-13] MemoryGlacier", "[BOT-14] NectarOps", "[BOT-15] MarbleCrayon",
+        "[BOT-16] LadderMemory", "[BOT-17] CombCell", "[BOT-18] LadderFeather",
+        "[BOT-19] GravelFalcon", "[BOT-20] GownVision", "[BOT-21] NursePhantom",
+        "[BOT-22] UnderFidelity", "[BOT-23] HandPrison", "[BOT-24] PlankWood",
+        "[BOT-25] MatterCool", "[BOT-26] DarkGazer", "[BOT-27] ApiaryNode",
+        "[BOT-28] FallingConundrum", "[BOT-29] ChillSachet", "[BOT-30] DazzlingStar"
     )
 
     // Samsung/Google Fast Pair model IDs for Sour Droid
@@ -238,7 +238,7 @@ class OffensiveToolsActivity : Activity() {
 
         // Section: BLE Flood
         content.addView(buildSectionLabel("BLE SPAM", tc))
-        content.addView(buildAttackButton("BLE FLOOD", "Flood BLE scanners with random fake device names", tc))
+        content.addView(buildAttackButton("BLE FLOOD", "Flood BLE scanners with evil endpoints", tc))
         (content.getChildAt(content.childCount - 1) as LinearLayout).setOnClickListener {
             confirmAndRun("BLE Flood") { startBleFlood() }
         }
